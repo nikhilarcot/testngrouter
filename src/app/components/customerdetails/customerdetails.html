@@ -1,0 +1,11 @@
+<section class="customerdetails-body">
+  <h1 class="font-bold">{{$ctrl.header1}}</h1>
+  <div>
+    <p><span class="font-bold">{{$ctrl.tabCol1}}:</span> {{$ctrl.selectedCustomer.firstName}}</p>
+    <p><span class="font-bold">{{$ctrl.tabCol2}}:</span> {{$ctrl.selectedCustomer.lastName}}</p>
+    <p><span class="font-bold">{{$ctrl.tabCol3}}:</span> {{$ctrl.selectedCustomer.location}}</p>
+    <p><span class="font-bold">{{$ctrl.tabCol4}}:</span> {{$ctrl.selectedCustomer.province}}</p>
+  </div>
+  <h3 class="font-bold msg2">{{$ctrl.header2}}</h3>
+  <button ui-sref="home" class="back-btn customerdetails-body">{{$ctrl.btnText}}</button>
+</section>

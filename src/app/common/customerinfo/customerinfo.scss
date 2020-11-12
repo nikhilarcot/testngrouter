@@ -1,0 +1,60 @@
+@import '../common';
+
+.hero {
+    background-color: $darkBgColor;
+    height: 50rem;
+    padding: 3rem;
+}
+
+.show-error {
+    color: $redcolor;
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.show-green {
+    background-color: $greencolor;
+}
+
+.show-grey {
+    background-color: $greycolor;
+}
+
+.enabled {
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.customer-table {
+    border: 2px solid #A8A8A8;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+
+.customer-table th,
+.customer-table td {
+    padding: 14px 8px;
+    display: table-cell;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.customer-table th:first-child,
+.customer-table td:first-child {
+    padding-left: 16px;
+}
+
+// .customer-table tr:nth-child(even) {
+//   background-color: #f1f1f1;
+// }
+
+.customer-table tr {
+    border-bottom: 1px solid #ddd;
+}

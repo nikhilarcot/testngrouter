@@ -1,0 +1,39 @@
+.customerdetails-body {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.msg2 {
+    margin-top: 48px;
+    position: relative;
+}
+
+div p {
+    line-height: 40px;
+}
+
+.back-btn {
+    background-color: #F58426;
+    color: white;
+    border: 2px solid #F58426;
+    border-radius: 14px;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 3px;
+    transition-duration: 0.4s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    background-color: #f5b826;
+    color: black;
+}
