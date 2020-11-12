@@ -1,8 +1,8 @@
-@import "common/common";
+//@import "common/common";
 
-.app {
+body {
   height: 100%;
-  background-color: $bgColor;
+  font: 62.5% 'Roboto', sans-serif;
 }
 
 html {
@@ -41,13 +41,6 @@ body {
 }
 
 .main-body {
+  height: 100%;
   padding: 20px;
-}
-
-.view-icon {
-  color: #F58426;
-  text-decoration: none;
-  font-size: 13px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
 }

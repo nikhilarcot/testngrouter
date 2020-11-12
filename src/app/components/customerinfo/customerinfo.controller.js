@@ -11,14 +11,12 @@ class CustomerInfoController {
         this.$timeout = $timeout;
         this.CommonService = CommonService;
         this.AppConstants = AppConstants;
-
     }
 
     $onInit() {
         this.customersInfo = [];
         this.firstObject = [];
         this.isApiError = false;
-        this._getCustomerInfo();
         this.msg = this.AppConstants.CUSTOMER_INFO_PAGE.API_ERROR;
         this.infoHeader = this.AppConstants.CUSTOMER_INFO_PAGE.CUSTOMERINFO_TEXT;
         this.tabCol1 = this.AppConstants.CUSTOMER_INFO_PAGE.TAB_HEADER1;
@@ -27,8 +25,12 @@ class CustomerInfoController {
         this.tabCol4 = this.AppConstants.CUSTOMER_INFO_PAGE.TAB_HEADER4;
         this.tabCol5 = this.AppConstants.CUSTOMER_INFO_PAGE.TAB_HEADER5;
         this.tabRow1 = this.AppConstants.CUSTOMER_INFO_PAGE.TAB_ROW1;
+        this._getCustomerInfo();
     }
-
+    /*
+    *Process Promise 
+    *to show Customer Info Table
+    */
     _getCustomerInfo() {
         this.CommonService.getCustomerInfo().then(
             result => {
@@ -49,6 +51,10 @@ class CustomerInfoController {
             });
     }
 
+    /*
+    *Make a POST call 
+    *after loading Customer Info Table
+    */
     _updateCustomerInfo(data) {
 
         let jsonObject = data.shift();

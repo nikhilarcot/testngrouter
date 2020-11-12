@@ -11,7 +11,6 @@ class CommonService {
         this.$timeout = $timeout;
         this.AppConstants = AppConstants;
         this.selectedCustomer = {};
-
     }
 
 
